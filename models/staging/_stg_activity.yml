@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_activity
+    description: "Standardized and deduplicated Pipedrive activities"
+
+    columns:
+      - name: activity_id
+        data_tests:
+          - not_null
+
+      - name: deal_id
+        description: "Associated deal identifier"
+
+      - name: activity_type
+        description: "Type of sales activity"
+
+      - name: is_completed
+        description: "Activity completion status"
+
+      - name: due_at
+        description: "Scheduled due date"

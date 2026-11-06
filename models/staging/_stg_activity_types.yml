@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_activity_types
+    description: "Standardized Pipedrive activity types"
+
+    columns:
+      - name: activity_type_id
+        description: "Unique identifier of an activity type"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: activity_type
+        description: "Technical activity type used for joining activities"
+        data_tests:
+          - not_null
+          - unique
+
+      - name: activity_type_name
+        description: "Business-readable activity type name"
+        data_tests:
+          - not_null
+
+      - name: is_active
+        description: "Whether the activity type is active"
+        data_tests:
+          - not_null

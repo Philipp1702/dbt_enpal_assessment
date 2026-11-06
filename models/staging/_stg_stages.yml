@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_stages
+    description: "Pipedrive sales funnel stages"
+
+    columns:
+      - name: stage_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: stage_name
+        data_tests:
+          - not_null
+          - unique
